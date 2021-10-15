@@ -39,7 +39,7 @@ public class Day10_SoftAssertion {
         softAssert.assertTrue(driver.getTitle().equals("Caretta Hotel"));
         //LINE 39 fails. BUT THE TEST CONTINUE TO RUN. BECAUSE THIS IS SOFT ASSERTION
 
-        //Clicing on Login Button
+        //Clicking on Login Button
         driver.findElement(By.linkText("Log in")).click();
         //asserting if the new page title is as expected
         softAssert.assertTrue(driver.getTitle().equals("Caretta Hotel - Log in"));
