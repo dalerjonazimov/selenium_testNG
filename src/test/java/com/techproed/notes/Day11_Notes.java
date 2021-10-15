@@ -9,6 +9,10 @@ It is class where we code the main objects to use again because in test case it 
 Page Object or WebElement
 
 
+--Create a good framework--
+utilities-> Driver class
+project->config.properties file
+utilities-> Config class
 
 
 
