@@ -32,6 +32,7 @@ public class ConfigReader {
     //it will take key  as String
     //and return the value
     //getProperty("app_url"); => http://www.carettahotel.com/
+    //KEY: app_url  and VALUE: http://www.carettahotel.com/
 
     public static String getProperty(String key){
 
@@ -39,4 +40,9 @@ public class ConfigReader {
         return value;
         //return properties.getProperty(key);
     }
+
+//    public static void main(String[] args) {
+//        String value = ConfigReader.getProperty("admin_password");
+//        System.out.println(value);
+//    }
 }

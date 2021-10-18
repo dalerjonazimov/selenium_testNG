@@ -9,7 +9,7 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import java.util.concurrent.TimeUnit;
 
 public class Driver {
-    //Similar to TestBase, Thi is a utilities class
+    //Similar to TestBase, This is  utilities class
     private static WebDriver driver; //Driver instance
  /*getDriver() method is used:
  * 1.SetUp driver
