@@ -16,4 +16,9 @@ public class Day12_DefaultPage {
     @FindBy(xpath = "//span[@class='hidden-480']")
     public WebElement addUserButton;
 
+    @FindBy(xpath = "//span[.='Hotel Management']")
+    public WebElement hotelManagementTab;
+
+    @FindBy(partialLinkText = "Hotel Rooms")
+    public WebElement hotelRoomsTab;
 }
