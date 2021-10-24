@@ -17,7 +17,7 @@ public class Day14_ReadExcel {
     @Test
     public void readExcel() throws IOException {
         //Store the path the file in a string
-        String path = "./src/test/java/resources/Capitals1.xlsx";
+        String path = "./src/test/java/resources/Capitals.xlsx";
 
         //Open the file
         FileInputStream fileInputStream = new FileInputStream(path);
@@ -46,6 +46,7 @@ public class Day14_ReadExcel {
 
         //Go to 2nd row first cell and assert if the data equal to USA
         Cell row2Cell1 = sheet.getRow(1).getCell(0);
+            //sheet.getRow(ROW INDEX NUMBER).getCell(CELL INDEX NUMBER)
         boolean isEqual = row2Cell1.toString().equals("USA");
         System.out.println(isEqual); //true because cell's data type is Cell first we need to make it String then compare to assert
         System.out.println(row2Cell1); //USA
@@ -103,7 +104,7 @@ public class Day14_ReadExcel {
     public void excelUtilDemo(){
         //We use Util classes to do faster and accurate automation script
         //Using some the ExcelUtil methods
-        String path = "./src/test/java/resources/Capitals1.xlsx";
+        String path = "./src/test/java/resources/Capitals.xlsx";
         String sheetName = "capitals_sheet";
 
         //To use the ExcelUtil Class, first create ExcelUtil Object

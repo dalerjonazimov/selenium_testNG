@@ -28,5 +28,11 @@ public class Day12_LoginPage {
     @FindBy(xpath ="//div[@id='divMessageResult']")
     public WebElement errorIdAndPasswordMessage;
 
+    @FindBy(id = "details-button")
+    public WebElement advancedLink;
+
+    @FindBy(id="proceed-link")
+    public WebElement proceedLink;
+
 
 }
