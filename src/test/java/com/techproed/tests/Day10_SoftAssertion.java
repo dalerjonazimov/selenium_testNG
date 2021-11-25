@@ -28,21 +28,21 @@ public class Day10_SoftAssertion {
     public void softAssert(){
         /*
          * When user goes to the application home page
-         * and verifies the title equals Caretta Hotel - Home
+         * and verifies the title equals Caretta Hotels - Home
          * and clicks on login button
-         * then verifies the page title equals Caretta Hotel-Login
+         * then verifies the page title equals Caretta Hotels - Log in
          * */
         driver.get("http://www.carettahotel.com/");
         //Step 1: Create SoftAssert object
         SoftAssert softAssert = new SoftAssert();
         //Step 2: Do assertion  using softAssert object
-        softAssert.assertTrue(driver.getTitle().equals("Caretta Hotel"));
+        softAssert.assertTrue(driver.getTitle().equals("Caretta Hotels"));//normally should be "Caretta Hotels - Home"
         //LINE 39 fails. BUT THE TEST CONTINUE TO RUN. BECAUSE THIS IS SOFT ASSERTION
 
         //Clicking on Login Button
         driver.findElement(By.linkText("Log in")).click();
         //asserting if the new page title is as expected
-        softAssert.assertTrue(driver.getTitle().equals("Caretta Hotel - Log in"));
+        softAssert.assertTrue(driver.getTitle().equals("Caretta Hotels - Login")); //normally should be "Caretta Hotels - Log in"
 
         // !!! use assertAll() to make the actual assertion
         // If you do not use assertAll(), you will get false test result

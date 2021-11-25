@@ -1,0 +1,12 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Caretta-Test-Suite" parallel="methods" thread-count="3">
+    <!--thread-count 3 means 3 browsers, parallel= "according class, method, group.." -->
+    <test name="class=set-1">
+        <classes>
+            <class name="com.techproed.paralleltesting.ManagerLogin"></class>
+            <class name="com.techproed.paralleltesting.SearchItem"></class>
+            <class name="com.techproed.paralleltesting.WebTables"></class>
+        </classes>
+    </test>
+
+</suite>

@@ -54,7 +54,8 @@ public class Day12_NegativeLoginTest {
         loginPage3.loginButton.click();
 //3.Then verify the error message includes "Username and password is incorrect, please correct then and try again"
         String actualIdAndPassword = loginPage3.errorIdAndPasswordMessage.getText();
-        Assert.assertTrue(actualIdAndPassword.contains("Username and password is incorrect, please correct then and try again"));
+        System.out.println(actualIdAndPassword);
+        Assert.assertTrue(actualIdAndPassword.contains("Username or password is incorrect, please correct them and try again"));
 
         Driver.closeDriver();
         //Done

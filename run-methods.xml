@@ -1,0 +1,21 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Caretta-Test-Suite">
+    <test name="class=set-1">
+        <classes>
+            <class name="com.techproed.tests.Day13_WebTables">
+                <methods>
+                    <include name="printRows"></include>
+                    <include name="printCells"></include>
+                </methods>
+            </class>
+            <class name="com.techproed.tests.smoketest.Day12_NegativeLoginTest">
+                <methods>
+                    <include name="invalidId"></include>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
+
+<!--suite> classes> clas> methods> include -->
+        <!--We can run specific method -->

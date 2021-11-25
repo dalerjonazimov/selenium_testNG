@@ -1,0 +1,25 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Caretta-Test-Suite">
+    <test name="class=set-1">
+        <groups>
+            <run>
+                <!--@Test(groups="regression-group-1") -->
+                <include name="regression-group-1"/>
+            </run>
+        </groups>
+
+        <classes>
+            <class name="com.techproed.tests.Day13_WebTables">
+                <methods>
+                    <include name="testMethod"/>
+                </methods>
+            </class>
+            <class name="com.techproed.tests.Day10_TestNGAnnotation">
+            </class>
+        </classes>
+
+    </test>
+
+</suite>
+
+<!--Run only regression groups from WebTables and TestNGAnnotations classes -->

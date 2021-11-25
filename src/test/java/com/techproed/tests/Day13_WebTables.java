@@ -41,7 +41,7 @@ public class Day13_WebTables {
         hotelRoomsPage = new Day12_HotelRoomsPage(); //we do initialize it because it is different page
 
     }
-    @Test
+    @Test(groups = "regression-group-1")
     public void entireTable(){
 
 //5.        Create a test method: entireTable() and print all of headers
@@ -59,7 +59,7 @@ public class Day13_WebTables {
 
 
     }
-    @Test
+    @Test(groups = "regression-group-1")
     public void printRows(){
 //6.        Create a test method: printRows() and Print all of the rows and print the elements on the 4th row
         System.out.println("*Print Rows*");

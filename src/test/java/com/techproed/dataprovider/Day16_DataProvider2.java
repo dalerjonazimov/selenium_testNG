@@ -15,7 +15,7 @@ public class Day16_DataProvider2 {
     Test the login functionality with manager credentials
     Create a data as 2S object array in getData method
      */
-    @DataProvider
+    @DataProvider(name = "manager-profiles", parallel = true)
     public Object[][] getData(){
         Object [][] managerProfile = {
                 {"manager", "Manager1!"},
